@@ -163,14 +163,14 @@ local support_id = msg.from.id
     return
   end
 
-  if matches[1]:lower() == "banlist" then -- Ban list !
+  if matches[1]:lower() == "banlist"or matches[1] =="لیست بن" then -- Ban list !
     local chat_id = msg.to.id
     if matches[2] and is_admin1(msg) then
       chat_id = matches[2]
     end
     return ban_list(chat_id)
   end
-  if matches[1]:lower() == 'ban' then-- /ban
+  if matches[1]:lower() == 'ban' or matches[1] =='بن' then-- /ban
     if type(msg.reply_id)~="nil" and is_momod(msg) then
       if is_admin1(msg) then
 		msgr = get_message(msg.reply_id,ban_by_reply_admins, false)
@@ -208,7 +208,7 @@ local support_id = msg.from.id
   end
 
 
-  if matches[1]:lower() == 'unban' then -- /unban
+  if matches[1]:lower() == 'unban' or matches[1] =='خ بن' then -- /unban
     if type(msg.reply_id)~="nil" and is_momod(msg) then
       local msgr = get_message(msg.reply_id,unban_by_reply, false)
     end
@@ -235,7 +235,7 @@ local support_id = msg.from.id
 	end
  end
 
-if matches[1]:lower() == 'kick' then
+if matches[1]:lower() == 'kick' or matches[1] =='اخراج' then
     if type(msg.reply_id)~="nil" and is_momod(msg) then
       if is_admin1(msg) then
         msgr = get_message(msg.reply_id,Kick_by_reply_admins, false)
@@ -275,7 +275,7 @@ end
 		return
 	end
 
-  if matches[1]:lower() == 'banall' and is_admin1(msg) then -- Global ban
+  if matches[1]:lower() == 'banall' or matches[1] =='گلوبال بن' and is_admin1(msg) then -- Global ban
     if type(msg.reply_id) ~="nil" and is_admin1(msg) then
       banall = get_message(msg.reply_id,banall_by_reply, false)
     end
@@ -299,7 +299,7 @@ end
 		resolve_username(username, kick_ban_res, cbres_extra)
       end
   end
-  if matches[1]:lower() == 'unbanall' then -- Global unban
+  if matches[1]:lower() == 'unbanall' or matches[1] =='خ گلوبال بن' then -- Global unban
     local user_id = matches[2]
     local chat_id = msg.to.id
       if string.match(matches[2], '^%d+$') then
@@ -319,7 +319,7 @@ end
 		resolve_username(username, kick_ban_res, cbres_extra)
       end
   end
-  if matches[1]:lower() == "gbanlist" then -- Global ban list
+  if matches[1]:lower() == "gbanlist" or matches[1] =="لیست گلوبال بن" then -- Global ban list
     return banall_list()
   end
 end
@@ -334,6 +334,19 @@ return {
 	"^[#!/]([Kk]ickme)",
     "^[#!/]([Kk]ick)$",
 	"^[#!/]([Bb]an)$",
+    "^[!#/](گلوبال بن) (.*)$",
+    "^[!#/](گلوبال بن)$",
+    "^[!#/](لیست بن) (.*)$",
+    "^[!#/](لیست بن)$",
+    "^[!#/](لیست گلوبال بن)$",
+    "^[!#/](اخراج)$",
+	"^[!#/](بن)$",
+    "^[!#/](بن) (.*)$",
+    "^[!#/](خ بن) (.*)$",
+    "^[!#/](خ گلوبال بن) (.*)$",
+    "^[!#/](خ گلوبال بن)$",
+    "^[!#/](اخراج) (.*)$",
+    "^[!#/](خ بن)$",
     "^[#!/]([Bb]an) (.*)$",
     "^[#!/]([Uu]nban) (.*)$",
     "^[#!/]([Uu]nbanall) (.*)$",
