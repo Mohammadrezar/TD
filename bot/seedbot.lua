@@ -250,7 +250,6 @@ function create_config( )
     "kickme",
     "kickbyfwd",
     "info",
-    "chat",
     "azan",
     "activeuser",
     "expire",
