@@ -278,8 +278,7 @@ function create_config( )
     "supergroup",
     "engmodhelp",
     "modhelp",
-    "help",
-    "keepcalm"
+    "help"
     },
     sudo_users = {219201071,248974584,173061880,173061880,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
