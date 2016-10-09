@@ -1,4 +1,4 @@
-# [TeleSeed](https://telegram.me/TeleSeed)
+# [TeleDiamond](https://telegram.me/antispamandhack)
 
 [![https://gitter.im/SEEDTEAM/TeleSeed](https://badges.gitter.im/SEEDTEAM/TeleSeed.svg)](https://gitter.im/SEEDTEAM/TeleSeed?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
