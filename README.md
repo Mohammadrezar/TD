@@ -7,6 +7,11 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 ```
 # دقت کنید که کل کد رو وارد کنید
 
+# سپس خود و خود ربات رو تو سرور سودو کنید
+
+برای اموزش سودو کردن برو روی لینک زیر کلیک کنید.
+
+
 
 
 # راهنمای سودو :
