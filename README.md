@@ -18,7 +18,14 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 # [آموزش نصب اتولانج پیکا]()
 
 
+سوالی بود در خدمتم
 
+# [Mohammad](http://telegram.me/mrr619)
+
+
+# کانال من
+
+# [کلیک کن](http://telegram.me/antispamandhack)
 
 # راهنمای سودو :
 
