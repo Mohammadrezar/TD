@@ -5,164 +5,34 @@
 ```sh
 sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/telediamond.git -b supergroups && cd telediamond && chmod +x launch.sh && ./launch.sh install && ./launch.sh
 ```
+# دقت کنید که کل کد رو وارد کنید
 
 
-سورسTeleDiamond اوپن شد.
-از قابلیت های این سورس:
 
-1)پترن و ریترن دو زبانه
+# راهنمای سودو :
 
-2)اضافه کردن و حذف کردن پلاگین از سرور از داخل تلگرام
-
-3)اتولانچ پیکا(اپتایم بالای 5روز)
-
-4)کلی پلاگین تفریحی که اگه نخواستین راحت میتونین حذفشون کنین
-
-5)تا جایی ممکن دیباگ شده
-
-اموزش نصب سورس:
-برنامه های مورد نیاز:
-برنامه ای برای وصل شدن به سرور و ترمینان که میتونید برای وصل شدن به سرور از unixadmin یا توروکلاینت استفاده کنید و برای ورود به سرور از همون توربو کلاینت یا Ex Expolrer استفاده کنید.
-هر دو برنامرو میتونیداز تو کانال ما دانلود کنید که لینک دانلود پایین قرار داره.
-
-کلون سورس:
-
-1)اگه سرورتون خامه(تازه گرفتید) اول کدهای اماده سازی سرور رو بزنید.
-این کد هارو میتونین تو کانال ما میدا کنین که ایدیش پایین تر هست.
-
-2)این کد را کامل در ترمینان خودواردکنید
-
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/telediamond.git -b supergroups && cd telediamond && chmod +x launch.sh && ./launch.sh install && ./launch.sh
-
-3)حالا ازتون شماره میخواد
-شماره ربات رو به این شکل وارد کنید
-+codekeshvar********
-مثلا:
-+79064392
-یا
-+98911*******
-4)حالا ازتون کد میخواد کدی که به شماره ارسال شده رو وارد کنید.
-خب حالا کلون سورس تموم شد.
-
-5)خودتون و رباتتون رو سودو کنید.
-اموزش سودو کردن به طور کامل پایین هست.
-خب حالا ربات ساخته شد.
-برای ران کردن ربات اگه نمیخواین با اتولانچ ران کنید (معمولی) قسمت (6) و اگه میخواین با اتولانچ ران کنید قسمت (7) رو انجام بدین
-6)بعد از سودو کردن با این کدها ربات رو ران کنید
-cd telediamond
-screen ./launch.sh
-و برای ریلانچ بعد از اف شدن با این کدها
-cd telediamond
-killall screen
-killall tmux
-killall telegram-cli
-sudo killall
-screen ./launch.sh
-
-7)برای نصب اتولانچ اگه رباتتون رو یوزر اصلی یا روته (root) قسمت (الف) و اگه رو یوزری بجز روته قسمت (ب) رو انجام بدین
-
-الف)این کدهارو توی ترمینان بترتیب بزنید:
-cd telediamond
-
-sed -i "s/root/$(whoami)/g" etc/pika.conf
-
-sed -i "s_telegrambotpath_$(pwd)_g" etc/pika.conf
-
-sudo cp etc/pika.conf /etc/init/
-
-chmod 777 pika
-
-nohup ./pika &>/dev/null &
-
-screen ./pika
-
-و برای ریلانچ در صورت خاموش شدن ربات
-cd telediamond
-killall screen
-killall tmux
-killall telegram-cli
-sudo killall
-screen ./pika
-
-ب)وارد سرور بشید،برین تو پوشه telediamond بعد برین تو پوشه etc روی فایل pika.conf کلیک کنید خب حالا باید ادیتش کنید
-خط یکی مونده به اخر ینی این خط
-setuid root 
-بجای (root)اسم یوزر خودتونو بنویسید ینی اینجوری
-setuid emsuserton
-خب حالا سیو کنیدو برین به ترمینان و این دستوراتو بزنین
-cd telediamond
-
-sed -i "s/username/$(whoami)/g" etc/pika.conf
-تو اینجا بجای (username) اسم یوزر خودتون رو قرار بدین و تو ترمینان بزنین سپس
-sed -i "s_telegrambotpath_$(pwd)_g" etc/pika.conf
-
-sudo cp etc/pika.conf /etc/init/
-
-chmod 777 pika
-
-nohup ./pika &>/dev/null &
-
-screen ./pika
-و برای لانچ دوباره بعد اف شدن ربات
-cd telediamond
-killall screen
-killall tmux
-killall telegram-cli
-sudo killall
-screen ./pika
-
-(برای اموزش وارد شدن به سرور قسمت اموزش سودو کردن رو بخونید ولی بجای پوشه دیتا برین تو پوشه etc)
-
-
-راهنمای سودو :
-1)شما میتونید با این پترن(دستور) از داخل تلگرام پلاگینی رو به سرورتون اضافه کنید.
+اضافه کردن پلاگین با ریپلی
 !save pluginname
-رو پلاگین ریپلی کرده و بجای pluginname اسم پلاگین بدون پسوندlua رو بنویسد
-پلاگین خودکار فعال میشه و نیازی ب فعال کردنش نیس
-2)حذف پلاگین
+حذف پلاگین
 !delplugin pluginname
-
-3)فعال کردن پلاگین
+فعال کردن پلاگین
 plug + pluginname
-
-4)غیرفعال کردن پلاگین
+غیرفعال کردن پلاگین
 plug - pluginname
-دقت کنید که برای حذف پلاگین اول پلاگو غیرفعال کرده بعد حذفش کنید(تا از کونفیگم حذف شه)
-5)ساخت گروه با ربات
+ساخت گروه با ربات
 /creategroup test
-6)اد کردن ربات یه گروهی
+اد کردن ربات یه گروهی
 !add
 یا
 اد شو
-7)حذف ربات
+حذف ربات
 !rem
+یا
 حذف شو
-8)ارسال فوروادد به همه گروها
+ارسال فوروادد به همه گروها
 !fwd
 
-اموزش سودو کردن:
-اول به ربات زیر رفته
-@userinfobot
-استارت کنید ربات ایدی عددی شمارو میده.ایدی عددی رو کپی کنید(هم با اکانت ربات و هم با اکانت خودتون اینکارو بکنین) سپس
 
-وارد برنامه توربو کلاینت یا Ex explorer بشید.من اموزشش با اکسپلوررو میگم
-وارد که شدید بر روی
-بر روی مور(more) یا همون سه نخته یا سه تا خط ک در بالای برنامه هست کلیک کنید.در صفحه باز شده قسمت شبکه را باز کنید(با کلیک) بر روی FTP کلیک کنید و بر روی + یا جدید یاnew کلیک کنید در صفحه باز شده Sftp رو انتخاب کنید
-سپس به ترتیب از بالا
-بجای
-سرور
-》ادرس (IP) سرور رو قرار بدید
-درگاه
-》پورت سرورتون(معمولا 22)
-نام کاربری
-》اسم یوزر سرورتون(مثلا root)
-رمز عبور
-》پسورد سرورتون
-در کادر اخرم اسم دلخواه و اکی میکنیم حالا میبینید که سرورتون ساخته شد.
-خب برید تو سرور اگه رو یوزر روته رباتتون برین تو پوشه root و اگه رو یوزر غیر اصلیه برین تو پوشه home سپس برین تو پوشه یوزرتون
-حالا برید تو پوشه telediamond
-سپس پوشه data و بر روی فایل کونفیگ کلیک کنید و سه نخته رو زده و بر روی ویرایش کلیک کنید
-اخر فایل چنین متنی رو میبینید
 sudo_users = {
     738265678,
     827262626,
