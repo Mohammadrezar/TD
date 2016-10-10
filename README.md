@@ -13,9 +13,11 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 
 # [آموزش سودو کردن](http://telegram.me/antispamandhack/267)
 
-# این سورس اتولانچ پیکا(ازمحمدعزیز)روش هست برای فعال کردن پیکا بر روی لینک زیر کلیک کنید
+# این سورس اتولانچ پیکا(ازمحمدعزیز)روش هست برای آموزش فعال کردن پیکا بر روی لینک زیر کلیک کنید
 
 # [آموزش نصب اتولانج پیکا]()
+
+
 
 
 # راهنمای سودو :
@@ -55,59 +57,7 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 # !fwd
 
 
-sudo_users = {
-    738265678,
-    827262626,
-    11322,
-    0
-  }
-}
-return _
-end
-اول جلوی عدد اخر (,)رو قرار بدین و یه سطر بیاین پایین تر دقیقا زیر عدد بالایی ایدی عددی خودتون رو مثل اون اعداد وارد کنید سپس دوباره جلوی ایدی عددی خودتون (,) قرار بدین و یه سطر پایین تر ایدی عدد ربات رو هم قرار بدین
-مثل نمونه زیر:
-Xxxxxxxxx
-مثلا ایدی عددی شما و
-Yyyyyyyyy
-ایدی عددی ربات
-sudo_users = {
-    738265678,
-    827262626,
-    11322,
-    0,
-    Xxxxxxxxx,
-    Yyyyyyyyy
-  }
-}
-return _
-end
-سپس فایل و سیو کنید.
-حالا شما سودو ربات شدید.
 
-
-
-
-
-
-l antispam system with custom sensitivity for each group**
-* **Multiple realms (admin groups)**
-* **Recalcitrant to any kind of spamming (X/Y bots, name/photo changers, etc.)**
-* **Global banning**
-* **Broadcast to all groups**
-* **Group and  links**
-* **Kick, ban and unban by reply**
-* **Groups, ban and global ban list**
-* **Logging anything that happens in a group**
-* **Invitation by username**
-* **Group administration via private messages**
-* **Only mods, owner and admin can add bots in groups**
-* **Arabic lock**
-* **Lock TgService**
-* **Chat list**
-* **And more!**
-
-
-* * *
 
 ## Commands
 TeleDiamond has several commands that are only usable at certain ranks.
