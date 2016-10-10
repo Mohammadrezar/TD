@@ -2,7 +2,9 @@
 
 # برای نصب سورس کد زیر را در ترمینان وارد کنید
 
-
+```sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/telediamond.git -b supergroups && cd telediamond && chmod +x launch.sh && ./launch.sh install && ./launch.sh
+```
 
 
 سورسTeleDiamond اوپن شد.
@@ -468,4 +470,3 @@ Create a realm using the `!createrealm` command.
 	2. Add two members or bots, then use `#Tosuper` to convert to a SuperSroup.
 	3. Use the `#addlog` command and your ***LOG SuperGroup(s)*** will be set.
 	Note: you can set multiple Log SuperGroups
-
