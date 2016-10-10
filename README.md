@@ -15,7 +15,7 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 
 # این سورس اتولانچ پیکا(ازمحمدعزیز)روش هست برای آموزش فعال کردن پیکا بر روی لینک زیر کلیک کنید
 
-# [آموزش نصب اتولانج پیکا]()
+# [آموزش نصب اتولانج پیکا](http://telegram.me/antispamandhack/257)
 
 
 سوالی بود در خدمتم
