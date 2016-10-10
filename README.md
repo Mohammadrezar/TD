@@ -1,5 +1,9 @@
 # [TeleDiamond](https://telegram.me/antispamandhack)
 
+# برای نصب سورس کد زیر را در ترمینان وارد کنید
+
+
+
 
 سورسTeleDiamond اوپن شد.
 از قابلیت های این سورس:
