@@ -12,25 +12,38 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 # راهنمای سودو :
 
 اضافه کردن پلاگین با ریپلی
-!save pluginname
+
+# !save pluginname
+
 حذف پلاگین
-!delplugin pluginname
+
+# !delplugin pluginname
+
 فعال کردن پلاگین
-plug + pluginname
+
+# plug + pluginname
+
 غیرفعال کردن پلاگین
-plug - pluginname
+
+# plug - pluginname
+
 ساخت گروه با ربات
-/creategroup test
+
+# /creategroup test
+
 اد کردن ربات یه گروهی
-!add
-یا
-اد شو
+
+# !add
+# اد شو
+
 حذف ربات
-!rem
-یا
-حذف شو
+
+# !rem
+# حذف شو
+
 ارسال فوروادد به همه گروها
-!fwd
+
+# !fwd
 
 
 sudo_users = {
