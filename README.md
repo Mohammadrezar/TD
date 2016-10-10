@@ -11,7 +11,11 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 
 برای اموزش سودو کردن برو روی لینک زیر کلیک کنید.
 
+# [آموزش سودو کردن](http://telegram.me/antispamandhack/267)
 
+# این سورس اتولانچ پیکا(ازمحمدعزیز)روش هست برای فعال کردن پیکا بر روی لینک زیر کلیک کنید
+
+# [آموزش نصب اتولانج پیکا]()
 
 
 # راهنمای سودو :
