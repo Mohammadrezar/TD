@@ -242,7 +242,6 @@ function create_config( )
     "muteall",
     "weather",
     "tr",
-    "show",
     "ping",
     "mean",
     "me",
