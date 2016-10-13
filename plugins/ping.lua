@@ -18,11 +18,4 @@ return {
   },
   run = run
 }
---[[
-#
-#
-#                 @Hell_Bot_channel
-#               
-#                  @H_e_ll_B_O_Y
-#
-]]
+
