@@ -260,7 +260,7 @@ function create_config( )
     "filter",
     "rmsg",
     "filterfa",
-    "pmload",
+    "msg_checks",
     "fwdall",
     "stats",
     "fun",
