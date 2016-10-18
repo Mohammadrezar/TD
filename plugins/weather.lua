@@ -1,14 +1,4 @@
-﻿--[[
 
-     **************************
-     *  BlackPlus Plugins...  *
-     *                        *
-     *     By @MehdiHS        *
-     *                        *
-     *  Channel > @Black_Ch   *
-     **************************
-	 
-]]
 local function temps(K)
 	local F = (K*1.8)-459.67
 	local C = K-273.15
@@ -134,14 +124,4 @@ return {
 	run = run,
 }
 
---[[
 
-     **************************
-     *  BlackPlus Plugins...  *
-     *                        *
-     *     By @MehdiHS        *
-     *                        *
-     *  Channel > @Black_Ch   *
-     **************************
-	 
-]]
