@@ -1,4 +1,4 @@
-# [TeleDiamond](https://telegram.me/antispamandhack)
+# _[TeleDiamond](https://telegram.me/antispamandhack)
 
 # برای نصب سورس کد زیر را در ترمینان وارد کنید
 
@@ -18,14 +18,14 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 # [کلیک کنید](http://telegram.me/antispamandhack/276)
 
 
-سوالی بود در خدمتم (بزن رو اسم)
-
-# [Mohammad](http://telegram.me/mrr619)
 
 
-# کانال من
+# _[Mohammad](http://telegram.me/mrr619) سوالی یا مشکلی بود در خدمتم
 
-# [کلیک کن](http://telegram.me/antispamandhack)
+
+# برای ورود به کانال کلیک کن
+
+# _[کلیک کن](http://telegram.me/antispamandhack)
 
 # راهنمای سودو :
 
