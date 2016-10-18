@@ -272,7 +272,7 @@ function create_config( )
     "lock_edit",
     "lock_cmds"
     },
-    sudo_users = {219201071,248974584,173061880,173,0,tonumber(our_id)},--Sudo users
+    sudo_users = {219201071,248974584,173061880,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[TeleDiamond v1
 An advanced administration bot based on TG-CLI written in Lua
