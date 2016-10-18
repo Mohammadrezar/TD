@@ -3,7 +3,7 @@
 # برای نصب سورس کد زیر را در ترمینان وارد کنید
 
 ```sh
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/telediamond.git -b supergroups && cd telediamond && chmod +x launch.sh && ./launch.sh install && ./launch.sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/telediamond.git && cd telediamond && chmod +x launch.sh && ./launch.sh install && ./launch.sh
 ```
 # دقت کنید که کل کد رو وارد کنید
 
@@ -15,10 +15,10 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 
 # این سورس اتولانچ پیکا(ازمحمدعزیز)روش هست برای آموزش فعال کردن پیکا بر روی لینک زیر کلیک کنید
 
-# [آموزش نصب اتولانج پیکا](http://telegram.me/antispamandhack/276)
+# [کلیک کنید](http://telegram.me/antispamandhack/276)
 
 
-سوالی بود در خدمتم
+سوالی بود در خدمتم (بزن رو اسم)
 
 # [Mohammad](http://telegram.me/mrr619)
 
@@ -58,10 +58,6 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 
 # !rem
 # حذف شو
-
-ارسال فوروادد به همه گروها
-
-# !fwd
 
 
 
