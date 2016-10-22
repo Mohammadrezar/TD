@@ -254,7 +254,6 @@ function create_config( )
     "expire",
     "write1",
     "time2",
-    "expand",
     "date",
     "filter",
     "rmsg",
