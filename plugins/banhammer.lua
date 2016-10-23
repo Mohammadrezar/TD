@@ -275,7 +275,7 @@ end
 		return
 	end
 
-  if matches[1]:lower() == 'banall' or matches[1] =='گلوبال بن' and is_admin1(msg) then -- Global ban
+  if matches[1]:lower() == 'banall' and is_admin1(msg) or matches[1] =='گلوبال بن' and is_admin1(msg) then -- Global ban
     if type(msg.reply_id) ~="nil" and is_admin1(msg) then
       banall = get_message(msg.reply_id,banall_by_reply, false)
     end
