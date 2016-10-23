@@ -1,9 +1,9 @@
 ﻿local function run(msg, matches)
 local hash = 'kmember:'..msg.to.id
-    if matches[1] == 'kmember'or matches[1] =='حذف بافوروارد' and is_momod(msg) and redis:get(hash) == nil then
+    if matches[1] == 'kmember' and is_momod(msg) or matches[1] =='حذف بافوروارد' and is_momod(msg) and redis:get(hash) == nil then
            redis:set(hash, "waite")
            return send_large_msg(get_receiver(msg), 'حالا پیام شخص مورد نظر را فوروارد کنید')
-	elseif matches[1] == 'kmember'or matches[1] =='حذف بافوروارد' and is_momod(msg) and redis:get(hash) == "waite" then
+	elseif matches[1] == 'kmember' and is_momod(msg) or matches[1] =='حذف بافوروارد' and is_momod(msg) and redis:get(hash) == "waite" then
 	       return send_large_msg(get_receiver(msg),"شما قبلا در خواست کرده ایید لطفا پیام کاربر مورد نظر را فوروراد کنید دهید" )
  end
 end
