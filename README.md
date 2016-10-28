@@ -2,13 +2,13 @@
 
 # برای نصب سورس کد زیر را در ترمینال وارد کنید
 
-```sh
+```
 sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/td.git && cd td && chmod +x launch.sh && ./launch.sh install && ./launch.sh
 ```
 # دقت کنید که کل کد رو وارد کنید
 
 # سپس شماره خود را با پیش شماره وارد کنید
-مثلا : +989111111111
++مثلا : 989111111111
 
 # سپس خود و خود ربات رو تو سرور سودو کنید
 
@@ -38,7 +38,8 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 
 # الف)این کدهارو توی ترمینال بترتیب بزنید:
 
-``` cd telediamond
+```
+cd td
 
 sed -i "s/root/$(whoami)/g" etc/pika.conf
 
@@ -53,9 +54,16 @@ nohup ./pika &>/dev/null &
 sudo start pika
 
 screen ./pika
+
 ```
 
-# ب)وارد سرور بشید،برین تو پوشه telediamond بعد برین تو پوشه etc روی فایل pika.conf کلیک کنید خب حالا باید ادیتش کنید
+# ب)وارد سرور بشید،برین تو پوشه
+# td
+# بعد برین تو پوشه 
+# etc
+# روی فایل
+# pika.conf
+کلیک کنید خب حالا باید ادیتش کنید
 خط یکی مونده به اخر ینی این خط
 setuid root 
 بجای (root)اسم یوزر خودتونو بنویسید ینی اینجوری
