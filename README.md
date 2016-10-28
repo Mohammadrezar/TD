@@ -7,6 +7,9 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 ```
 # دقت کنید که کل کد رو وارد کنید
 
+# سپس شماره خود را با پیش شماره وارد کنید
+مثلا : +989111111111
+
 # سپس خود و خود ربات رو تو سرور سودو کنید
 
 # به سرور کانکت بشین و برین تو پوشه دیتا و فایل کانفیگ و ایدی عددی خود رو بزارید تو فایل کانفیگ
@@ -24,6 +27,68 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 
 برای اموزش دقیق تر کلیک کن
 # [آموزش سودو کردن](http://telegram.me/antispamandhack/267)
+
+# کسایی که سرورشون پولیه قسمت 1
+# و کسایی که سرورشون رایگانه(مثل سی 9)قسمت 2 رو انجام بدن
+
+# لطفا طبق نوع سرور خود پیش برید
+
+# 2)برای نصب اتولانچ اگه رباتتون رو یوزر اصلی یا روته (root) قسمت (الف) و اگه رو یوزری بجز روته قسمت (ب) رو انجام بدین
+
+الف)این کدهارو توی ترمینان بترتیب بزنید:
+cd telediamond
+
+sed -i "s/root/$(whoami)/g" etc/pika.conf
+
+sed -i "s_telegrambotpath_$(pwd)_g" etc/pika.conf
+
+sudo cp etc/pika.conf /etc/init/
+
+chmod 777 pika
+
+nohup ./pika &>/dev/null &
+
+sudo start pika
+
+screen ./pika
+
+و برای ریلانچ در صورت خاموش شدن ربات
+cd telediamond
+killall screen
+killall telegram-cli
+sudo killall
+screen ./pika
+
+ب)وارد سرور بشید،برین تو پوشه telediamond بعد برین تو پوشه etc روی فایل pika.conf کلیک کنید خب حالا باید ادیتش کنید
+خط یکی مونده به اخر ینی این خط
+setuid root 
+بجای (root)اسم یوزر خودتونو بنویسید ینی اینجوری
+setuid emsuserton
+خب حالا سیو کنیدو برین به ترمینال و این دستوراتو بزنین
+cd telediamond
+
+sed -i "s/username/$(whoami)/g" etc/pika.conf
+تو اینجا بجای (username) اسم یوزر خودتون رو قرار بدین و تو ترمینان بزنین سپس
+sed -i "s_telegrambotpath_$(pwd)_g" etc/pika.conf
+
+sudo cp etc/pika.conf /etc/init/
+
+chmod 777 pika
+
+nohup ./pika &>/dev/null &
+
+sudo start pika
+
+screen ./pika
+و برای لانچ دوباره بعد اف شدن ربات
+cd telediamond
+killall screen
+killall telegram-cli
+sudo killall
+screen ./pika
+ 
+
+
 
 
 # [Mohammad](http://telegram.me/mrr619) سوالی یا مشکلی بود در خدمتم
