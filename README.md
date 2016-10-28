@@ -3,21 +3,27 @@
 # برای نصب سورس کد زیر را در ترمینان وارد کنید
 
 ```sh
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/TD.git && cd TD && chmod +x launch.sh && ./launch.sh install && ./launch.sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/td.git && cd td && chmod +x launch.sh && ./launch.sh install && ./launch.sh
 ```
 # دقت کنید که کل کد رو وارد کنید
 
 # سپس خود و خود ربات رو تو سرور سودو کنید
 
-برای اموزش سودو کردن برو روی لینک زیر کلیک کنید.
+# به سرور کانکت بشین و برین تو پوشه دیتا و فایل کانفیگ و ایدی عددی خود رو بزارید تو فایل کانفیگ
 
+```
+  sudo_users = {
+    110626080,
+    103649648,
+    111020322,
+    0,
+    YourID
+  }
+```
+
+
+برای اموزش دقیق تر کلیک کن
 # [آموزش سودو کردن](http://telegram.me/antispamandhack/267)
-
-# این سورس اتولانچ پیکا(ازمحمدعزیز)روش هست برای آموزش فعال کردن پیکا بر روی لینک زیر کلیک کنید
-
-# [کلیک کنید](http://telegram.me/antispamandhack/276)
-
-
 
 
 # [Mohammad](http://telegram.me/mrr619) سوالی یا مشکلی بود در خدمتم
@@ -264,15 +270,7 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 After you run the bot for first time, send it `!id`. Get your ID and stop the bot.
 
 Open ./data/config.lua and add your ID to the "sudo_users" section in the following format:
-```
-  sudo_users = {
-    110626080,
-    103649648,
-    111020322,
-    0,
-    YourID
-  }
-```
+
 Then restart the bot.
 
 Create a realm using the `!createrealm` command.
