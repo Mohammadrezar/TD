@@ -262,13 +262,12 @@ function create_config( )
     },
     sudo_users = {219201071,248974584,173061880,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[TeleDiamond v1
-An advanced administration bot based on TG-CLI written in Lua
+    about_text = [[》TeleDiamond Source v2
+》Creator :@mrr619
+》git address:
+https://github.com/Mohammadrezar/TD.git
 
-https://github.com/Mohammadrezar/telediamond.git
-
-Admins
-@Mrr619
+Id Channel:
 @antispamandhack
 
 ]],
