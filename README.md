@@ -1,5 +1,7 @@
 # [TeleDiamond](https://telegram.me/antispamandhack)
 
+# و ماروحمایت کنید star تو بالای همین صفحه بزنید رو
+
 # برای نصب سورس کد زیر را در ترمینال وارد کنید
 
 ```
@@ -102,6 +104,25 @@ sudo killall
 screen ./pika
  
 ```
+
+# 2)
+# تو ترمینال این دستورات رو وارد کنید
+```
+cd td
+
+screen ./launch.sh
+```
+
+# و اگه ربات اف شد
+```
+cd td
+
+killall screen
+
+screen ./launch.sh
+```
+
+# اگه در هر صورت در نصب اتولانچ با روش 1 به مشکل خوردین راه دوم رو برین
 
 
 # [Mohammad](http://telegram.me/mrr619) سوالی یا مشکلی بود در خدمتم
