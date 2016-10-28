@@ -29,6 +29,8 @@ local telediamondsudo = [[
 ❔وارد شدن ربات به گروه با لینک
 💢!setexpire (day)
 ❔تنظیم تاریخ انقضای گروه
+💢!pattern (plugname)
+❔نمایش پترن پلاگین ها
 💢!get (plugname)
 ❔دریافت پلاگین در تلگرام
 💢!p + plugname
