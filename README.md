@@ -3,7 +3,7 @@
 # برای نصب سورس کد زیر را در ترمینان وارد کنید
 
 ```sh
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/telediamond.git && cd telediamond && chmod +x launch.sh && ./launch.sh install && ./launch.sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/TD.git && cd TD && chmod +x launch.sh && ./launch.sh install && ./launch.sh
 ```
 # دقت کنید که کل کد رو وارد کنید
 
@@ -27,39 +27,10 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 
 # [عضویت](http://telegram.me/antispamandhack)
 
-# راهنمای سودو :
-
-اضافه کردن پلاگین با ریپلی
-
-# !save pluginname
-
-حذف پلاگین
-
-# !delplugin pluginname
-
-فعال کردن پلاگین
-
-# plug + pluginname
-
-غیرفعال کردن پلاگین
-
-# plug - pluginname
-
-ساخت گروه با ربات
-
-# /creategroup test
-
-اد کردن ربات یه گروهی
-
-# !add
-# اد شو
-
-حذف ربات
-
-# !rem
-# حذف شو
-
-
+#  برای دریافت راهنما برای سودو ها دستور زیر را وارد کنید
+# !راهنمای سودو
+یا
+# !sudohelp
 
 
 ## Commands
