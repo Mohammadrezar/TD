@@ -208,7 +208,7 @@ if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel"
 
 	if matches[1] == 'help' and msg.to.type == 'user' or matches[1] == 'pmhelp' and is_admin1(msg) and msg.to.type ~= 'user' then
       	savelog(msg.to.id, name_log.." ["..msg.from.id.."] used pm help")
-		text = "Welcome to TeleDiamond!\n\nTo get a list of TeleDiamond groups use /chats or /chatlist for a document list of chats.\n\nTo get a new TeleDiamond group\njoin us\n@antispamandhack"
+		text = "》Welcome to TeleDiamond!\n\n》This is TeleDiamond source version 2\ngit address:\n》www.github.com/mohammadrezar/TD\n\n》join us\n@antispamandhack"
      	return text
     end
 
