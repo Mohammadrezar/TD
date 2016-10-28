@@ -1,4 +1,4 @@
-# 》[TeleDiamond](https://telegram.me/antispamandhack) V2
+# 》[TeleDiamond V2](https://telegram.me/antispamandhack)
  
 #  و به ماستاره بدین star تو بالای همین صفحه بزنید رو
 # ♡=☆
