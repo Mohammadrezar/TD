@@ -532,7 +532,7 @@ Join us:
     if matches[1] == 'راهنمای مدیریتی' and is_momod(msg) then
         return telediamond  
   elseif matches[1] == 'sudohelp' and is_momod(msg) or matches[1] == 'راهنمای سودو' and is_momod(msg) then
-    return telediamond5
+    return telediamondsudo
   elseif matches[1] == 'راهنمای قفلی' and is_momod(msg) then
     return telediamond2
   elseif matches[1] == 'راهنمای فان' and is_momod(msg) then
