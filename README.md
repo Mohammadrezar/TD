@@ -57,22 +57,27 @@ screen ./pika
 
 ```
 
-# ب)وارد سرور بشید،برین تو پوشه
-# td
-# بعد برین تو پوشه 
-# etc
-# روی فایل
-# pika.conf
+ ب)وارد سرور بشید،برین تو پوشه
+td
+ بعد برین تو پوشه 
+etc
+ روی فایل
+pika.conf
 کلیک کنید خب حالا باید ادیتش کنید
 خط یکی مونده به اخر ینی این خط
 setuid root 
-بجای (root)اسم یوزر خودتونو بنویسید ینی اینجوری
+بجای روت اسم یوزر خودتونو بنویسید ینی اینجوری
 setuid emsuserton
 خب حالا سیو کنیدو برین به ترمینال و این دستوراتو بزنین
-cd telediamond
+```
+cd td
 
 sed -i "s/username/$(whoami)/g" etc/pika.conf
-تو اینجا بجای (username) اسم یوزر خودتون رو قرار بدین و تو ترمینان بزنین سپس
+
+تو اینجا بجای 
+username
+اسم یوزر خودتون رو قرار بدین و تو ترمینال بزنین سپس
+
 sed -i "s_telegrambotpath_$(pwd)_g" etc/pika.conf
 
 sudo cp etc/pika.conf /etc/init/
@@ -84,26 +89,31 @@ nohup ./pika &>/dev/null &
 sudo start pika
 
 screen ./pika
-و برای لانچ دوباره بعد اف شدن ربات
-cd telediamond
+```
+
+# خب تموم شد و ربات شما با این سورس ران شد
+
+# اگه رباتتون اف شد برین تو ترمینال و این دستوراتو بزنین
+```
+cd td
 killall screen
 killall telegram-cli
 sudo killall
 screen ./pika
  
-
-
+```
 
 
 # [Mohammad](http://telegram.me/mrr619) سوالی یا مشکلی بود در خدمتم
 
+# توضیحات بیشتر در کانال ما
 
 # برای ورود به کانال کلیک کن
 
 # [عضویت](http://telegram.me/antispamandhack)
 
 #  برای دریافت راهنما برای سودو ها دستور زیر را وارد کنید
-# !راهنمای سودو
+# راهنمای سودو!
 یا
 # !sudohelp
 
@@ -319,8 +329,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/Mohammadrezar/telediamond.git -b supergroups
-cd telediamond
+git clone https://github.com/Mohammadrezar/td.git
+cd td
 chmod +x launch.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
@@ -329,27 +339,8 @@ chmod +x launch.sh
 To install everything in one command (useful for VPS deployment) on Debian-based distros, use:
 ```sh
 #https://github.com/yagop/telegram-bot/wiki/Installation
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/telediamond.git -b supergroups && cd telediamond && chmod +x launch.sh && ./launch.sh install && ./launch.sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/td.git && cd td && chmod +x launch.sh && ./launch.sh install && ./launch.sh
 ```
 
 * * *
 
-### Realm configuration
-
-After you run the bot for first time, send it `!id`. Get your ID and stop the bot.
-
-Open ./data/config.lua and add your ID to the "sudo_users" section in the following format:
-
-Then restart the bot.
-
-Create a realm using the `!createrealm` command.
-
-* * *
-
-**Creating a LOG SuperGroup**
-	-For GBan Log
-
-	1. Create a group using the `!creategroup` command.
-	2. Add two members or bots, then use `#Tosuper` to convert to a SuperSroup.
-	3. Use the `#addlog` command and your ***LOG SuperGroup(s)*** will be set.
-	Note: you can set multiple Log SuperGroups
