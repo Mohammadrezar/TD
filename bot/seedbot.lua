@@ -242,11 +242,9 @@ function create_config( )
     "muteall",
     "patterns",
     "kickme",
-    "kickbyfwd",
     "info",
     "expire",
     "filter",
-    "rmsg",
     "filterfa",
     "msg_checks",
     "stats",
@@ -258,7 +256,9 @@ function create_config( )
     "TDhelps",
     "setwlc",
     "lock_edit",
-    "lock_cmds"
+    "lock_cmds",
+    "uptime",
+    "setsudo"
     },
     sudo_users = {219201071,248974584,173061880,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
