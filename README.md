@@ -1,5 +1,5 @@
-# 》[TeleDiamond](https://telegram.me/antispamandhack)
-
+# 》[TeleDiamond](https://telegram.me/antispamandhack) V2
+ 
 #  و به ماستاره بدین star تو بالای همین صفحه بزنید رو
 # ♡=☆
 
@@ -61,8 +61,7 @@ screen ./pika
 
 ```
 
-# ب)وارد سرور بشید،برین تو پوشه《
-# etcبعد برین تو پوشه
+# etc ب)وارد سرور بشید،برین تو پوشه《
 # pika.confروی فایل 
 # کلیک کنید خب حالا باید ادیتش کنید
 # خط یکی مونده به اخر ینی این خط
