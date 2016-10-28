@@ -1,6 +1,6 @@
 # [TeleDiamond](https://telegram.me/antispamandhack)
 
-# برای نصب سورس کد زیر را در ترمینان وارد کنید
+# برای نصب سورس کد زیر را در ترمینال وارد کنید
 
 ```sh
 sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/Mohammadrezar/td.git && cd td && chmod +x launch.sh && ./launch.sh install && ./launch.sh
@@ -33,10 +33,12 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 
 # لطفا طبق نوع سرور خود پیش برید
 
-# 2)برای نصب اتولانچ اگه رباتتون رو یوزر اصلی یا روته (root) قسمت (الف) و اگه رو یوزری بجز روته قسمت (ب) رو انجام بدین
+# 1)
+# برای نصب اتولانچ اگه رباتتون رو یوزر اصلی یا روته قسمت (الف) و اگه رو یوزری بجز روته قسمت (ب) رو انجام بدین
 
-الف)این کدهارو توی ترمینان بترتیب بزنید:
-cd telediamond
+# الف)این کدهارو توی ترمینال بترتیب بزنید:
+
+``` cd telediamond
 
 sed -i "s/root/$(whoami)/g" etc/pika.conf
 
@@ -51,15 +53,9 @@ nohup ./pika &>/dev/null &
 sudo start pika
 
 screen ./pika
+```
 
-و برای ریلانچ در صورت خاموش شدن ربات
-cd telediamond
-killall screen
-killall telegram-cli
-sudo killall
-screen ./pika
-
-ب)وارد سرور بشید،برین تو پوشه telediamond بعد برین تو پوشه etc روی فایل pika.conf کلیک کنید خب حالا باید ادیتش کنید
+# ب)وارد سرور بشید،برین تو پوشه telediamond بعد برین تو پوشه etc روی فایل pika.conf کلیک کنید خب حالا باید ادیتش کنید
 خط یکی مونده به اخر ینی این خط
 setuid root 
 بجای (root)اسم یوزر خودتونو بنویسید ینی اینجوری
