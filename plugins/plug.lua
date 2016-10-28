@@ -42,7 +42,7 @@ local function list_all_plugins(only_enabled)
       text = text..nsum..'. '..v..'  '..status..'\n'
     end
   end
-  local text = text..'\n#Done 😉'
+  local text = text..'\n#Done '
   return text
 end
 
@@ -67,7 +67,7 @@ local function list_plugins(only_enabled)
       text = text..v..'  '..status..'\n'
     end
   end
-  local text = text..'\n#Done 😉'
+  local text = text..'\n#Done '
   return text
 end
 
@@ -209,10 +209,10 @@ return {
           },
   patterns = {
     "^[!/#]plugins$",
-    "^[Pp]lug? (-) ([%w_%.%-]+)",
-    "^[Pp]lug? (+) ([%w_%.%-]+) (chat)",
-    "^[Pp]lug? (+) ([%w_%.%-]+)",
-    "^[Pp]lug? (-) ([%w_%.%-]+) (chat)" },
+    "^[!#/][[Pp]? (-) ([%w_%.%-]+)",
+    "^[!#/][[Pp]? (+) ([%w_%.%-]+) (chat)",
+    "^[!#/][[Pp]? (+) ([%w_%.%-]+)",
+    "^[!#/][[Pp]? (-) ([%w_%.%-]+) (chat)" },
   run = run,
   moderated = true, -- set to moderator mode
   --privileged = true
