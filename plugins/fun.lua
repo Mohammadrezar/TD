@@ -169,7 +169,7 @@ end
 --------------------------
 function run(msg, matches) 
 	 --------------------------
-  if matches[1] == 'clean' and matches[2] == "msg" and is_momod(msg) or matches[1] == 'حدف' and matches[2] == "پیام ها" and is_momod(msg) or matches[1] == 'rm' and matches[2] == "sg" and is_momod(msg) then
+  if matches[1] == 'clean' and matches[2] == "msg" and is_momod(msg) or matches[1] == 'حذف' and matches[2] == "پیام ها" and is_momod(msg) or matches[1] == 'rm' and matches[2] == "sg" and is_momod(msg) then
     if msg.to.type == "user" then 
       return 
       end
